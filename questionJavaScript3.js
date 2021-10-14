@@ -14,8 +14,8 @@ return obj={
 }
 var input=[1,2,3,4,5];
 var k=maxAndsum(input);
-document.write("Max: "+k.max+"<br>");
-document.write("Sum: "+k.sum);
+console.log("Max: "+k.max+"<br>");
+console.log("Sum: "+k.sum);
 
 
 

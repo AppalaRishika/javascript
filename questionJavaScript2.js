@@ -1,11 +1,10 @@
 function getReport(){
-let subject=['Maths','Physics','Chemistry'];
+let subject=['Maths','Physics','Chemistry'];//array for subjects
 let Marks=[];
-for(var index=0;index<3;index++){
+for(var index=0;index<3;index++){//loop for generating random marks into the marks array
     let al = Math.floor(Math.random()*100);
-    Marks.push(al);
-    //console.log(Marks[index]+"<br>");
-    //document.write(Marks[index]+"<br>");
+    Marks.push(al);//inserting values into marks array
+    console.log(Marks[index]+"<br>");
 }
 let Status=[];
 for(var index=0;index<3;index++){
@@ -33,7 +32,8 @@ let Report=[
         Status:Status[2],
     },
 ];
-console.table(Report);
+return Report;
 }
 
-getReport();
+let t=getReport();
+console.table(t);
